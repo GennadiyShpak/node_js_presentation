@@ -13,7 +13,7 @@ const writeFinishListener = data => {
 };
 
 writeFile(FILE_NAME, FIRST_ROW, 'utf8', () => {
-    eventEmitter.emit(EVENT_NAME, SECOND_ROW);
+    // eventEmitter.emit(EVENT_NAME, SECOND_ROW);
 });
 
 eventEmitter.on(EVENT_NAME, writeFinishListener);
